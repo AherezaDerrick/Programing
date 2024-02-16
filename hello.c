@@ -1,23 +1,23 @@
 #include <stdio.h>
 #include <math.h>
 
-float sum(float a, float b);
+int sum(int a, int b);
 
 int main(){
 
-    float a, b, c;
+    int a, b, c;
 
     printf("Enter the first number: ");
-    scanf("%f", &a);
+    scanf("%i", &a);
 
     printf("Enter the second number: ");
-    scanf("%f", &b);
+    scanf("%i", &b);
 
     c = sum(a, b);   
-    printf("The sum of %f and %f is %f", a, b, c);
+    printf("The sum of %i and %i is %f", a, b, c);
     return 0;
 }
 
-float sum(float a, float b){
+int sum(int a, int b){
     return a+b;
 }
